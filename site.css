@@ -1,3 +1,17 @@
+/*Font Imports*/ /*Text type does not go in quotes*/
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap'); /*sans-serif*/
+@import url('https://db.onlinewebfonts.com/c/dd4320757ff990fa3d23662f08aa6f3a?family=Central+W01+Bold');
+@import url('https://fonts.googleapis.com/css2?family=Dosis&display=swap'); /*sans-serif*/
+
+/*Variables*/
+:root {
+    --mainfont: "Ubuntu", sans-serif;
+}
+
+#hello {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 h1 {
     color: dodgerblue;
 }
@@ -8,4 +22,8 @@ a#inactive {
 
 a#inactive:hover {
     color: black;
+}
+
+a.navbar-brand {
+    font-family: var(--mainfont);
 }
