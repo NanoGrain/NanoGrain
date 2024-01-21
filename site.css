@@ -2,6 +2,10 @@ h1 {
     color: dodgerblue;
 }
 
+a#inactive {
+    color: gray
+}
+
 a#inactive:hover {
-    color: #1e1d1d
+    color: black;
 }
