@@ -5,12 +5,13 @@
 
 /*Variables*/
 :root {
-    --mainfont: "Ubuntu", sans-serif;
+    --mainfont: "Central W01 Bold", sans-serif;
 }
 
-#hello {
-    font-family: 'Courier New', Courier, monospace;
+p {
+    font-family: 'Dosis', sans-serif;
 }
+
 
 h1 {
     color: dodgerblue;
