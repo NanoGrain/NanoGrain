@@ -34,21 +34,22 @@ a.navbar-brand {
 }
 
 #shine-anim-nav {
-    background: linear-gradient(90deg, black, white, black);
+    color: black;
+    background: linear-gradient(90deg, white, white, white);
     background-repeat: no-repeat;
-    background-size: 80%;
+    background-size: 25%;
     animation: text-shine 3s linear infinite;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(255, 255, 255, 0.95);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.69);
     
 }
 
 @keyframes text-shine {
     0% {
-        background-position: -500%;
+        background-position: -200%;
     }
     100% {
-        background-position: -500%;
+        background-position: 200%;
     }
 }
