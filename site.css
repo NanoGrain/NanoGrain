@@ -34,16 +34,21 @@ a.navbar-brand {
 }
 
 #shine-anim-nav {
+    position: relative;
     color: black;
-    background: linear-gradient(90deg, white, white, white);
-    background-repeat: no-repeat;
-    background-size: 5%;
-    animation: text-shine 6s linear 1;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(0, 0, 0, 0.7);
-    filter: brightness(200%);
-    
+    overflow: hidden;
+    display: inline-block;
+}
+
+#shine-anim-nav::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, white, transparent);
+    animation: text-shine 3s linear forwards;
 }
 
 #titlehomeng {
@@ -53,11 +58,10 @@ a.navbar-brand {
 
 @keyframes text-shine {
     0% {
-        background-position: -300%;
+        left: -100%;
     }
     100% {
-        background-position: 300%;
-        color: #4C3A02;
+        left: 200%;
     }
 }
 
