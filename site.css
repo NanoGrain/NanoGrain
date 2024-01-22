@@ -37,11 +37,12 @@ a.navbar-brand {
     color: black;
     background: linear-gradient(90deg, white, white, white);
     background-repeat: no-repeat;
-    background-size: 25%;
-    animation: text-shine 3s linear infinite;
+    background-size: 5%;
+    animation: text-shine 6s linear 1;
     background-clip: text;
     -webkit-background-clip: text;
-    -webkit-text-fill-color: rgba(0, 0, 0, 0.69);
+    -webkit-text-fill-color: rgba(0, 0, 0, 0.7);
+    filter: brightness(200%);
     
 }
 
@@ -52,10 +53,11 @@ a.navbar-brand {
 
 @keyframes text-shine {
     0% {
-        background-position: -200%;
+        background-position: -300%;
     }
     100% {
-        background-position: 200%;
+        background-position: 300%;
+        color: #4C3A02;
     }
 }
 
