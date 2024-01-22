@@ -45,11 +45,29 @@ a.navbar-brand {
     
 }
 
+#titlehomeng {
+    animation: logo-enter 2s ease-in-out;
+    animation-iteration-count: 1;
+}
+
 @keyframes text-shine {
     0% {
         background-position: -200%;
     }
     100% {
         background-position: 200%;
+    }
+}
+
+@keyframes logo-enter {
+    0% {
+        transform: translateX(-50%);
+        transform: translateY(-50%);
+        rotate: -45deg;
+    }
+    100% {
+        transform: translateX(0);
+        transform: translateY(0);
+        rotate: 0deg;
     }
 }
