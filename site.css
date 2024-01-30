@@ -34,13 +34,35 @@ a.navbar-brand {
 }
 
 #shine-anim-nav {
-    position: relative;
     color: black;
+    position: relative;
     overflow: hidden;
-    display: inline-block;
 }
 
 #shine-anim-nav::before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, white 0%, white 100%) no-repeat;
+    background-size: 200% 100%;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}   
+/*#shine-anim-nav::before {
     content: "";
     position: absolute;
     top: 0;
@@ -48,15 +70,21 @@ a.navbar-brand {
     width: 100%;
     height: 100%;
     background: linear-gradient(90deg, transparent, white, transparent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
     animation: text-shine 3s linear forwards;
-}
+    mask-image: linear-gradient(90deg, transparent, black, transparent);
+}*/
+
+
 
 #titlehomeng {
     animation: logo-enter 2s ease-in-out;
     animation-iteration-count: 1;
 }
 
-@keyframes text-shine {
+/*@keyframes text-shine {
     0% {
         left: -100%;
     }
@@ -64,7 +92,7 @@ a.navbar-brand {
         left: 200%;
     }
 }
-
+*/
 @keyframes logo-enter {
     0% {
         transform: translateX(-200%);
